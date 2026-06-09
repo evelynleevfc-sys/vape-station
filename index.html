@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Vape Station | Vaporizadores de Alta Tecnología en Medellín</title>
+    <meta name="description" content="Descubre en Vape Station las mejores alternativas de vaporización en Medellín. Equipos con tecnología de control de temperatura y altos estándares de calidad.">
+    <meta name="keywords" content="vape station, vaporizadores medellin, alternativas de vaporización, equipos de vapeo, cigarrillos electrónicos calidad">
+    <meta name="author" content="Gloria Stella Jaramillo Acevedo">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Vape Station - Tecnología en Vaporización">
+    <meta property="og:description" content="Explora nuestros dispositivos de alta calidad diseñados para una experiencia superior y controlada.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Vape Station",
+      "image": "",
+      "telephone": "+573012234563",
+      "email": "biswaseishata@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cl 36 #92-17",
+        "addressLocality": "Medellín",
+        "addressCountry": "CO"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
+    
+    <style>
+        /* ================= VARIABLES Y RESET ================= */
+        :root {
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --primary: #38bdf8;
+            --secondary: #818cf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-main); background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        a { text-decoration: none; color: var(--primary); transition: color 0.3s; }
+        a:hover { color: var(--secondary); }
+        ul { list-style: none; }
+
+        /* ================= ESTRUCTURA GLOBAL ================= */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 2.5rem; color: #fff; }
+        .section-title span { color: var(--primary); }
+        section { padding: 80px 0; }
+        
+        .btn-primary {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #fff;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(129, 140, 248, 0.4);
+            color: #fff;
+        }
+
+        /* ================= CABECERA Y HERO ================= */
+        header { padding: 20px 0; background: rgba(15, 23, 42, 0.95); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #334155; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 800; color: #fff; letter-spacing: 1px; }
+        .logo span { color: var(--primary); }
+        
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center top, #1e293b 0%, #0f172a 100%);
+            border-bottom: 1px solid #1e293b;
+        }
+        .hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+        /* ================= GRID DE TARJETAS ================= */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card {
+            background-color: var(--surface-color);
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #334155;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+        .card:hover { border-color: var(--primary); transform: translateY(-5px); }
+        .card h3 { margin-bottom: 15px; font-size: 1.4rem; color: #fff; }
+        .card p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* ================= SECCIÓN DE COMPROMISO (Prueba Social) ================= */
+        .social-proof { background-color: var(--surface-color); border-top: 1px solid #334155; border-bottom: 1px solid #334155; }
+        .proof-box { text-align: center; max-width: 800px; margin: 0 auto; }
+        .proof-box p { font-size: 1.2rem; font-style: italic; color: #cbd5e1; }
+
+        /* ================= CONTACTO Y FORMULARIO ================= */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .contact-info { background: var(--surface-color); padding: 40px; border-radius: 12px; border: 1px solid #334155; }
+        .contact-info h3 { margin-bottom: 20px; color: var(--primary); font-size: 1.5rem; }
+        .contact-info p { margin-bottom: 15px; display: flex; align-items: flex-start; flex-direction: column; }
+        .contact-info p strong { display: block; color: #fff; margin-bottom: 3px; }
+
+        .contact-form { display: flex; flex-direction: column; gap: 20px; }
+        .form-group { display: flex; flex-direction: column; text-align: left; }
+        .form-group label { margin-bottom: 8px; font-size: 0.9rem; color: var(--text-muted); font-weight: 600; }
+        .form-group input, .form-group select {
+            width: 100%; padding: 15px; border-radius: 8px;
+            background: #0f172a; border: 1px solid #334155; color: #fff;
+            font-family: var(--font-main); transition: border-color 0.3s;
+        }
+        .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--primary); }
+
+        /* ================= FOOTER ================= */
+        footer { background: #020617; padding: 50px 0 20px; text-align: center; border-top: 1px solid #1e293b; }
+        .footer-links { margin-bottom: 25px; }
+        .footer-links a { margin: 0 15px; font-size: 0.95rem; color: var(--text-muted); }
+        .footer-warning { border: 1px solid #475569; padding: 15px; border-radius: 8px; max-width: 600px; margin: 0 auto 20px; color: #94a3b8; font-size: 0.85rem; }
+        .footer-copy { font-size: 0.85rem; color: #64748b; }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 2rem; }
+            .footer-links a { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">VAPE <span>STATION</span></div>
+            <nav>
+                <a href="#beneficios" style="margin-right:20px;">Beneficios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Experimenta la Nueva Generación en <span>Sistemas de Vaporización</span></h1>
+                <p>Equipos de alta tecnología diseñados bajo estrictos estándares de calidad. Disfruta de una experiencia controlada, personalizable y superior en Medellín.</p>
+                <a href="#contacto" class="btn-primary">Consulta Nuestro Catálogo de Vaporizadores</a>
+            </div>
+        </section>
+
+        <section id="beneficios" class="container">
+            <h2 class="section-title">¿Por qué elegir <span>Vape Station</span>?</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Tecnología Avanzada</h3>
+                    <p>Dispositivos de última generación con control de temperatura, flujo de aire ajustable y sistemas de seguridad integrados para un uso confiable.</p>
+                </div>
+                <div class="card">
+                    <h3>Calidad Verificada</h3>
+                    <p>Trabajamos exclusivamente con marcas reconocidas globalmente que cumplen con rigurosos procesos de manufactura y certificación de materiales.</p>
+                </div>
+                <div class="card">
+                    <h3>Asesoría Especializada</h3>
+                    <p>No solo entregamos equipos; te guiamos paso a paso para que entiendas el funcionamiento, mantenimiento y cuidado de tu dispositivo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" style="background-color: var(--surface-color);">
+            <div class="container">
+                <h2 class="section-title">Nuestra <span>Oferta Técnica</span></h2>
+                <div class="grid-3">
+                    <div class="card" style="background: var(--bg-color);">
+                        <h3>Sistemas Pods</h3>
+                        <p>Dispositivos compactos y portátiles, ideales para quienes buscan practicidad y un rendimiento consistente en cada uso.</p>
+                    </div>
+                    <div class="card" style="background: var(--bg-color);">
+                        <h3>Mods Avanzados</h3>
+                        <p>Equipos robustos con baterías de larga duración y pantallas digitales para usuarios que desean personalizar al máximo su experiencia.</p>
+                    </div>
+                    <div class="card" style="background: var(--bg-color);">
+                        <h3>Accesorios Originales</h3>
+                        <p>Repuestos, resistencias y componentes originales para garantizar que tu equipo funcione siempre como el primer día.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-proof">
+            <div class="container proof-box">
+                <h2 class="section-title">Transparencia y <span>Responsabilidad</span></h2>
+                <p>"En Vape Station nuestro objetivo es proporcionar acceso a tecnología de vaporización de primer nivel. Nos comprometemos con la autenticidad de nuestros productos y brindamos información clara a nuestros clientes para un uso responsable y prolongado de sus equipos."</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="container">
+            <h2 class="section-title">Solicita Información o <span>Asesoría</span></h2>
+            <div class="contact-grid">
+                
+                <div class="contact-info">
+                    <h3>Datos de Atención</h3>
+                    <p>En Vape Station operamos con total transparencia. Visítanos o contáctanos para atención personalizada en Medellín.</p>
+                    <br>
+                    <p><strong>Titular del Negocio:</strong> <span>Gloria Stella Jaramillo Acevedo</span></p>
+                    <p><strong>Dirección:</strong> <span>Cl 36 #92-17, Medellín, Colombia</span></p>
+                    <p><strong>Teléfono / WhatsApp:</strong> <span><a href="tel:+573012234563">301 223 4563</a></span></p>
+                    <p><strong>Correo Electrónico:</strong> <span><a href="mailto:biswaseishata@gmail.com">biswaseishata@gmail.com</a></span></p>
+                    <p><strong>Horario de Atención:</strong> <span>Lunes a Domingo: 8:00 am - 5:00 pm</span></p>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="leadForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Número de Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de contacto">
+                        </div>
+                        <div class="form-group">
+                            <label for="interes">¿Qué equipo te interesa?</label>
+                            <select id="interes" name="interes" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="Sistemas Pod">Sistemas Pod (Compactos)</option>
+                                <option value="Mods Avanzados">Mods Avanzados (Personalizables)</option>
+                                <option value="Accesorios">Accesorios y Repuestos</option>
+                                <option value="Asesoria">Necesito asesoría general</option>
+                            </select>
+                        </div>
+                        
+                        <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; gap: 10px; align-items: start;">
+                            <input type="checkbox" id="mayorEdad" required style="margin-top: 3px;">
+                            <label for="mayorEdad">Declaro que soy mayor de 18 años y acepto la Política de Privacidad.</label>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%;">Solicitar Catálogo / Asesoría</button>
+                    </form>
+                    <div id="formStatus" style="display:none; background: rgba(56, 189, 248, 0.1); border: 1px solid var(--primary); padding: 15px; border-radius: 8px; color: #fff; margin-top: 20px; text-align: center;">
+                        ¡Gracias por contactarnos! Hemos recibido tu solicitud. Te responderemos dentro de nuestro horario de atención.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-warning">
+                <strong>ADVERTENCIA:</strong> Los productos mencionados en este sitio web están dirigidos única y exclusivamente a personas mayores de 18 años. Mantener fuera del alcance de los niños y mascotas.
+            </div>
+            <div class="footer-links">
+                <a href="politica-de-privacidad.html">Política de Privacidad</a>
+                <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+            </div>
+            <p class="footer-copy">
+                &copy; <span id="year"></span> VAPE STATION - Gloria Stella Jaramillo Acevedo.<br>
+                Cl 36 #92-17, Medellín, Colombia. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulación de envío exitoso sin recargar la página (evita bloqueos o redirecciones raras)
+            document.getElementById('formStatus').style.display = 'block';
+            this.reset();
+            
+            setTimeout(() => {
+                document.getElementById('formStatus').style.display = 'none';
+            }, 6000);
+        });
+    </script>
+</body>
+</html>
